@@ -1,6 +1,7 @@
-from PySide.QtSvg import *
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtWidgets import QWidget
+from PySide2.QtCore import QSize, QByteArray, Qt
+from PySide2.QtSvg import QSvgRenderer
+from PySide2.QtGui import QPixmap, QPainter, QColor
 import hou, os, zipfile
 
 iconSize = 50
@@ -8,6 +9,9 @@ iconSize = 50
 class iconsWidgetClass(QWidget):
     def __init__(self):
         super(iconsWidgetClass, self).__init__()
+
+        self.setStyleSheet("background:#323232;") # custom bg color
+
         self.vLy = QVBoxLayout(self)
 
         self.fLy = QHBoxLayout()
