@@ -1,4 +1,4 @@
-from PySide2.QtWidgets import QWidget
+from PySide2.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QLineEdit, QScrollArea, QFrame, QGridLayout, QSpacerItem, QSizePolicy
 from PySide2.QtCore import QSize, QByteArray, Qt
 from PySide2.QtSvg import QSvgRenderer
 from PySide2.QtGui import QPixmap, QPainter, QColor
